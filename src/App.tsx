@@ -1,12 +1,27 @@
-import './App.css'
+import { useEffect, useState } from "react";
+import Loading from "./components/common/Loading/Loading";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    //chỉ khi mở lần đầu || refresh trang mới hiện loading
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500); 
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
-    <>
-        <div/>
-    </>
-  )
+    <div className="text-white bg-black min-h-screen flex items-center justify-center">
+      <h1 className="text-3xl font-bold text-primary">Trang chủ Rophim</h1>
+    </div>
+  );
 }
 
-export default App
+export default App;
