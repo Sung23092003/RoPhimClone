@@ -1,0 +1,21 @@
+.header {
+  background-color: transparent;
+  transition: background-color 0.5s ease, padding 0.5s ease, transform 0.5s ease;
+  will-change: transform, background-color, padding;
+}
+
+.header-inner {
+  padding: 1.5rem 2rem; 
+  transition: padding 0.5s ease;
+}
+
+.header--scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  transform: translateY(0);
+}
+
+.header--scrolled .header-inner {
+  padding: 0.5rem 2rem;
+}

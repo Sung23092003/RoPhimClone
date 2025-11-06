@@ -9,6 +9,9 @@ export default {
        colors: {
         primary: "#191B24",
       },
+      screens: {
+        'xxl': '1500px',
+      },
     },
   },
   plugins: [],

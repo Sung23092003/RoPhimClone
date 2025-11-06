@@ -18,8 +18,8 @@ function App() {
   }
 
   return (
-    <div className="text-white bg-black min-h-screen flex items-center justify-center">
-      <h1 className="text-3xl font-bold text-primary">Trang chủ Rophim</h1>
+    <div className="text-white bg-primary min-h-[20000px] flex items-center justify-center">
+      <h1 className="text-3xl font-bold text-white">Trang chủ Rophim</h1>
     </div>
   );
 }

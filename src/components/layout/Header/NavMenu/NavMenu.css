@@ -1,0 +1,13 @@
+span.new {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2px 3px;
+  line-height: 1;
+  background-color: #ffd875;
+  border-radius: 3px;
+  color: #000;
+}
+
+span.new::before {
+  content: "NEW";
+}

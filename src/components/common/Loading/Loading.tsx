@@ -3,7 +3,7 @@ import "./loading.css";
 
 const Loading: React.FC = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-primary text-white overflow-hidden">
+    <div className="flex items-center justify-center min-h-screen bg-primary text-white overflow-hidden z-50 fixed top-0 left-0 right-0 bottom-0">
       <div className="flex flex-col items-center animate-scaleFade">
         {/* Logo */}
         <img
